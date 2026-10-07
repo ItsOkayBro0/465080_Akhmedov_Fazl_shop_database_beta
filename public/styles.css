@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+	themes:
+		light --default,
+		dark --prefersdark;
+}
+
+/* Chromium с appearance: base-select рисует свою стрелку поверх стрелки daisyUI. */
+select.select::picker-icon {
+	display: none;
+}
